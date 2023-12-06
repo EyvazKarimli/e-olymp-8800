@@ -255,13 +255,13 @@
 
 
 
-//! Exercise 8817;
+// //! Exercise 8817;
 // let n = +prompt();
-// let sayi = 0;
-// for(let i = Math.pow(10, n - 1); i < Math.pow(10, n); i++){
-//     sayi++;
+// if(n > 0){
+//     alert(9*(Math.pow(10, n-1)))
+//     console.log(9*(Math.pow(10, n-1)));
 // }
-// console.log(sayi);
+
 
 
 
@@ -672,7 +672,9 @@
 //     n++;
 //     num = num / 10;
 // }
+// num = 1000;
 // console.log(n);
+// console.log(num);
 // console.log(typeof n);
 
 // if (num == Math.pow(10, n)){
@@ -681,7 +683,6 @@
 // else{
 //     console.log(`Wrong`);
 // }
-// console.log( num);
 
 
 //! Exercise 8879;
@@ -769,3 +770,289 @@
 // else{
 //     alert(`Add a number > 0`)
 // }
+
+
+
+//! Exercise 8883;
+// function findRectangle (array){
+//     let sum = 0;
+//     if((array[0] == array[3]) &&(array[1] == array[2])){
+//         for(let i = 0; i < array.length; i++){
+//             sum+= array[i]
+//         }
+//     }
+//     else{
+//         alert(`No`)
+//         console.log(`No`);
+//     }
+//     return sum
+// }
+// alert(findRectangle([7,4,4,7]))
+
+
+
+
+//! Exercise 8884;
+// function whichTypeTriangle(array){
+//     if((+array[0] > 0) && (+array[1] > 0) && (+array[2] > 0)){
+//         if((array[0] + array[1] > array[2]) && (array[0] + array[2] > array[1]) && (array[1] + array[2] > array[0])){
+//             if( (array[0] === array[1]) &&  (array[1] === array[2])){
+//                 alert(`equilateral`)
+//             }
+//             else if (((array[0] == array[1]) && (array[0] !== array[2])) || ((array[0] == array[2]) && (array[0] !== array[1])) || ((array[1] == array[2]) && (array[1] !== array[0]))){
+//                 alert(`isosceles`)
+//             }
+//             else if((array[0] !== array[1]) && (array[0] !== array[2])){
+//                 alert(`versatile`)
+//             }
+//         }
+
+//         else{
+//             alert(`Invalid`)
+//         }
+//     }
+//     else{
+//         console.log(`wrong`);
+//     }
+// }
+// whichTypeTriangle([2,3,5])
+
+
+
+
+
+
+
+//! Exercise 8885;
+
+// function findOddNumber (){
+//     let oddNumber = +prompt();
+//     if((oddNumber % 2) == 0){
+//         alert(oddNumber - 1)
+//     }
+//     else{
+//         alert(oddNumber - 2)
+//     }
+//     return oddNumber;
+// }
+// findOddNumber();
+
+
+
+
+
+
+//! Exercise 8886;
+// function findEvenNumber () {
+//     let evenNumber = +prompt();
+//     if(evenNumber % 2 == 0){
+//         alert(evenNumber - 2)
+//     }
+//     else{
+//         alert(evenNumber - 1)
+//     }
+//     return evenNumber
+// }
+// findEvenNumber()
+
+
+
+
+
+//! Exercise 8889; ededin içindeki tek ededlerin sayini tap
+
+// function countOddNumber(num1){
+//     let arr = String(num1).split("").map(Number);
+//     let result = 0;
+//     for(let i = 0; i< arr.length; i++){
+//         if(arr[i] % 2 !== 0){
+//             result++;
+//         }
+//     }
+//     return result;
+// }
+// console.log(countOddNumber(12345));
+
+
+
+
+
+//! Exercise 8890; Beşrəqəmli natural ədədi verilir. Bu ədədin cüt rəqəmlərini  1 vahid artirin
+
+// function finNewNumber (num1){
+//     let arrNum1 = String(num1).split("").map(Number);
+//     let result = [];
+//     for(let i = 0; i< arrNum1.length; i++){
+//         if(arrNum1[i] % 2 == 0){
+//             arrNum1[i]++
+//         }
+//         result.push(arrNum1[i])
+//     }
+//     let newNumber =parseInt(result.map(String).join(""));
+//     return newNumber
+// }
+// console.log(finNewNumber(12345));
+
+
+
+
+
+//! Exercise 8893;
+
+// function findNumber (num1){
+//     if(num1 == +num1){
+//         if(num1 < 100 && num1 > -100){
+//             if((num1 % 2 == 0) && (num1 % 3 == 0)){
+//                 console.log(`YES`);
+//             }
+//             else{
+//                 console.log(`NO`)
+//             }
+//         }
+//         else{
+//             console.log(`add -100 <  number < 100`);
+//         }
+//     }
+//     else{
+//         console.log(`add number`);
+//     }
+//     return num1
+// }
+// findNumber(12)
+
+
+
+
+
+
+
+//! Exercise 8895;       a, b, və c tam ədədləri verilir. Bu ədədlərdən ən azı biri müsbət və ən azı biri mənfidirsə çıxışa YES, əks halda NO verin.
+// let arr = [1, -2, 3]           
+// let negativeNum = true;
+// let positiveNum = true;
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i] >= 0){
+//         positiveNum = false;
+//     }
+//     else{
+//         negativeNum = false
+//     }
+// }
+// if(negativeNum == false && positiveNum == false){
+//     alert(`yes`)
+//  }
+//  else{
+//     alert(`no`)
+//  }
+
+
+
+
+
+
+
+
+
+
+
+//! Exercise 8896;      Proqram üçrəqəmli N ədədi daxil edir. N ədədinin bütün rəqəmləri fərqlidirsə çıxışa YES, əks halda NO verin.
+
+// let num1 = +prompt();
+// let arr = String(num1).split("").map(Number);
+// console.log(arr);
+// if(num1 < 1000 && num1 > -1000){
+//     if((arr[0] !== arr[1]) && (arr[1] !== arr[2])){
+//         alert(`YES`)
+//     }
+//     else{
+//         alert(`NO`)
+//     }
+// }
+// else{
+//     alert(`WRONG`)
+// }
+
+
+
+
+
+//! Exercise 8897;        Tam n ədədi verilir. n-dən böyük və 10-a tam bölünən ən kiçik ədədi tapın.
+// let num1 = -19;
+
+// if(num1 >= 0){
+//     console.log(num1 + (10 - (num1 % 10)));
+// }
+// else if ( num1 < 0){
+//     console.log(num1 + (10 + (num1 % 10)));
+// }
+
+
+
+
+//! Exercise 8898;  Proqram natural n ədədini daxil edir. n-dən böyük və tam kvadrat olan ən kiçik ədədi tapın.
+// let n = 7;
+// while (true) {
+//   n++;
+//     if(Math.sqrt(n, 2) === Math.ceil(Math.sqrt(n, 2))){
+//         break;
+//     }
+
+// }
+// console.log(n);
+
+
+
+
+//! Exercise 8899;  Proqram n natural ədədini daxil edir. n-dən böyük və ikinin qüvvəti olan ən kiçik ədədi tapın.
+// let n = 10;
+// while (true) {
+//   n++;
+//     if(Math.pow(n, 1/3) === Math.ceil(Math.pow(n, 1/3))){
+//         break;
+//     }
+
+// }
+// console.log(n);
+
+
+
+
+
+//! Exercise 8900;  n tam ədədi verilir. n-dən böyük olan və 7-yə tam bölünən ədədlərdən ən kiçiyini tapın.
+
+
+// let num = 14;
+// while(true){
+//     num++;
+//     if(num % 7 == 0){
+//         break
+//     }
+// }
+// console.log(num);
+
+
+
+
+
+//! Exercise 8901 ;   Natural n ədədi verilmişdir. Rəqəmlərinin sayı n ədədinin rəqəmlərinin sayından çox olan ilk ən kiçik ədədi çap edin.
+
+
+// let n = 77;
+// let result = 0;
+// while(n > 0){
+//     n = Math.floor(n / 10);
+//     result++;
+// }
+// console.log(Math.pow(10, result))
+
+
+//! Exercise 8902   n natural ədədi verilmişdir. n-dən böyük olan, 2, 3 və 5-ə bölünməyən ən kiçik natural ədədi çap edin. 
+
+// let n = 4;
+// while(true){
+//     n++;
+//     if((n % 2 !== 0) && (n % 3 !==0) && (n % 5 !== 0)){
+//         break
+//     }
+// }
+// console.log(n);
